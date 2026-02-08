@@ -1,0 +1,180 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+/* Jump Menu - Fixed left sidebar */
+#jumpMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 228px;
+    height: 100vh;
+    background-color: #DAA520;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#jumpMenu h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+#jumpMenu a {
+    display: block;
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* Main content area */
+main {
+    margin-left: 228px;
+    position: relative;
+}
+
+/* Header - Fixed at top */
+header {
+    position: fixed;
+    top: 0;
+    left: 228px;
+    right: 0;
+    background-color: red;
+    padding: 15px 0;
+    z-index: 100;
+}
+
+header > p {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    background-color: black;
+}
+
+header nav button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+/* Page title */
+main > h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+
+/* Articles container */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Individual articles */
+article {
+    width: 300px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+article h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+article a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Thank you message - Fixed bottom right */
+#thanks {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightblue;
+    padding: 25px 40px;
+    font-size: 32px;
+    font-weight: bold;
+    border: 2px solid #333;
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer > p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+address {
+    font-style: normal;
+}
+
+address div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+address span {
+    font-size: 14px;
+}
+
+address a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Responsive behavior for window resize */
+@media (max-width: 1200px) {
+    #container {
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 900px) {
+    article {
+        width: 280px;
+    }
+}
