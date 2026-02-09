@@ -97,7 +97,7 @@ main > h1 {
 
 
 article {
-    width: 300px;
+    width: 260px;
     margin-bottom: 30px;
     text-align: justify;
 }
@@ -127,7 +127,7 @@ article a {
     background-color: lightblue;
     padding: 25px 40px;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 300;
     border: 2px solid #333;
 }
 
