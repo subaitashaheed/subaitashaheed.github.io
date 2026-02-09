@@ -90,6 +90,7 @@ main > h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
     padding: 20px;
     max-width: 1400px;
     margin: 0 auto;
@@ -174,6 +175,6 @@ address a {
 
 @media (max-width: 900px) {
     article {
-        width: 280px;
+        width: 260px;
     }
 }
