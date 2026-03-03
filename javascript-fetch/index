@@ -22,7 +22,7 @@
     <div id="error-msg"></div>
 
     <div class="pokemon-display">
-      <div class="placeholder-img" id="placeholder">🎮</div>
+      <div class="placeholder-img" id="placeholder">❓</div>
       <img id="pokemon-img" src="" alt="Pokemon" />
 
       <audio id="pokemon-cry" controls></audio>
